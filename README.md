@@ -2,7 +2,7 @@
 
 A comprehensive Hospital Management System built with Flask, featuring role-based access control for Admin, Doctor, and Patient users. The system includes appointment booking, patient history management, treatment tracking, and automated email notifications.
 
-## 🚀 Features
+##  Features
 
 - **Role-Based Access Control**: Admin, Doctor, and Patient roles with different permissions
 - **Appointment Management**: Book, view, and manage appointments
@@ -11,7 +11,7 @@ A comprehensive Hospital Management System built with Flask, featuring role-base
 - **Email Notifications**: Automated daily reminders and monthly reports using Celery
 - **Email Testing**: MailHog integration for development email testing
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 MAD-II-HMS/
@@ -82,7 +82,7 @@ MAD-II-HMS/
 └── venv/                          # Python virtual environment
 ```
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 
@@ -133,7 +133,7 @@ MAD-II-HMS/
    python app.py
    ```
 
-## 🔐 Default Login Credentials
+##  Default Login Credentials
 
 ### Admin
 - **Email**: `admin@example.com`
@@ -147,14 +147,14 @@ MAD-II-HMS/
 - **Email**: `pinky@pqr.com`
 - **Password**: `12345`
 
-## 🌐 Port Configuration
+## Port Configuration
 
 - **Flask Application**: http://localhost:5000
 - **MailHog Web UI**: http://localhost:8025
 - **MailHog SMTP**: localhost:1025
 - **Redis**: localhost:6379
 
-## 📦 Key Dependencies
+##  Key Dependencies
 
 - **Flask 3.1.1** - Web framework
 - **Flask-Security-Too 5.6.2** - Authentication and authorization
