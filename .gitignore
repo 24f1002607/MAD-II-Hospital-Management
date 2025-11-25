@@ -34,7 +34,13 @@ venv.bak/
 instance/
 .webassets-cache
 
-
+# Database
+*.db
+*.sqlite
+*.sqlite3
+instance/*.db
+instance/*.sqlite
+instance/*.sqlite3
 
 # Redis
 dump.rdb
@@ -155,5 +161,3 @@ dmypy.json
 *.backup
 
 CHANGELOG.md
-
-
