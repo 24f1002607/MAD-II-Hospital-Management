@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments Report</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>HealixCare</h1>
+        <p>Generated on: {{ generation_date or 'N/A' }}</p>
+        <h2>Monthly Appointment Report for Dr. {{ doctor_name or 'N/A' }}</h2>
+
+        {% if appointments %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Patient Name</th>
+                    <th>Date & Time</th>
+                    <th>Status</th>
+                    <th>Visit Type</th>
+                    <th>Diagnosis</th>
+                    <th>Prescription</th>
+                    <th>Medicines</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for appointment in appointments %}
+                <tr>
+                    <td>{{ appointment.id or 'N/A' }}</td>
+                    <td>{{ appointment.patient_name or 'N/A' }}</td>
+                    <td>
+                        {% if appointment.date %}
+                            {{ appointment.date }}
+                        {% else %}
+                            N/A
+                        {% endif %}
+                        {% if appointment.time %}
+                            | {{ appointment.time }}
+                        {% endif %}
+                    </td>
+                    <td>{{ appointment.status or 'N/A' }}</td>
+                    <td>{{ appointment.treatment.visit_type if appointment.treatment else 'N/A' }}</td>
+                    <td>{{ appointment.treatment.diagnosis if appointment.treatment else 'N/A' }}</td>
+                    <td>{{ appointment.treatment.prescription if appointment.treatment else 'N/A' }}</td>
+                    <td>{{ appointment.treatment.medicines if appointment.treatment else 'N/A' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No appointments found for this month.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

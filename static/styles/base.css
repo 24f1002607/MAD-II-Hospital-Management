@@ -1,0 +1,319 @@
+
+
+.my_container{
+    border: 2px solid black
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;  
+  
+}
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('/static/Images/allpagebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page {
+  min-height: calc(100vh -60px); /* ensures full screen height */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 2rem; /* for some breathing room on small screens */
+}
+
+.card {
+  z-index: 2;
+}
+
+.my_panel{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    border: 1px dashed black;
+}
+
+.input_form{
+    border: 1px solid orangered;
+    width: 800px;
+    height: 900px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: justify;
+    
+
+
+}
+.center{
+    text-align: center;
+    margin: auto;
+    color:darkblue;
+}
+.admin-chart-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.chart-box {
+  flex: 1 1 100%;
+  max-width: 600px;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.chart-box h5 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust based on TopBar height */
+
+    padding: 2rem;
+}
+
+.modal-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 2rem 2.5rem;
+    max-width: 500px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-card h3 {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgba(0,123,255,.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-link {
+    color: #007bff;
+    font-weight: 500;
+}
+
+.text-danger {
+    color: #dc3545;
+    font-size: 0.9rem;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 123, 255, 0.2);
+  background: linear-gradient(to bottom right, #ffffff, #f0f8ff);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+  border: 1px solid #d6e9ff;
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.18);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 123, 255, 0.25);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  color: navy;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-header h2 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.card-header button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-header button:hover {
+  background-color: #0056b3;
+}
+
+.card-body {
+  overflow: visible;
+  padding: 1rem;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead th {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+tbody td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.action-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.block-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.85); /* glass effect to blend with bg */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b0c4de; /* soft blue-grey for subtle separation */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.08); /* gentle blue shadow */
+    backdrop-filter: blur(6px); /* glassmorphism effect */
+}
+
+.navbar span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.badge-active {
+  background-color: #28a745;
+}
+
+.badge-blocked {
+  background-color: #dc3545;
+}
